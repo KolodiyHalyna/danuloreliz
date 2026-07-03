@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ігровий ноутбук</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Наш стиль -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">PC shop</a>
+      <div class="nav-links">
+        <a href="index.html">Головна</a>
+        <a href="card.html" class="active">Товар</a>
+        <a href="contact.html">Контакти</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="product-page">
+
+        <div class="breadcrumb">
+          <a href="index.html">Головна</a> /
+          <a href="card.html">Товар</a> /
+          Ігровий ноутбук
+        </div>
+
+        <div class="product-layout">
+
+          <div class="product-img-box animate__animated animate__fadeInLeft">
+            <img src="data:image/webp;base64,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">
+          </div>
+
+          <div class="animate__animated animate__fadeInRight">
+            <div class="product-category">Ноутбуки</div>
+            <div class="product-name">Ігровий ноутбук</div>
+            <div class="product-price">1500$</div>
+            <div class="product-desc">
+            <p>Висока швидкість оновлення: 144 Гц</p>
+            <p>Пам'ять: 512 ГБ</p>
+            <p>Процесор: Intel Core i7 11gen</p>
+            <p>Батарея: 99 Вт·год</p>
+            <p>Оперативна пам'ять: 16 ГБ</p>
+            <p>Відеокарта: NVIDIA GeForce RTX 4060</p>
+            </div>
+            <div class="product-tags">
+            <span class="tag">Порт: HDMI, USB-C</span>
+            <span class="tag">Вага: 2.3 кг</span>
+            </div>
+            <a href="contact.html" class="buy-btn">Замовити🛒</a>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="index.html" class="footer-logo">PC shop</a>
+      <p>2026 усі права захищені</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

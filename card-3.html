@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ігрова клавіатура</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Наш стиль -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">PC shop</a>
+      <div class="nav-links">
+        <a href="index.html">Головна</a>
+        <a href="card.html" class="active">Товар</a>
+        <a href="contact.html">Контакти</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="product-page">
+
+        <div class="breadcrumb">
+          <a href="index.html">Головна</a> /
+          <a href="card.html">Товар</a> /
+          Ігрова клавіатура
+        </div>
+
+        <div class="product-layout">
+
+          <div class="product-img-box animate__animated animate__fadeInLeft">
+            <img src="data:image/webp;base64,UklGRsoWAABXRUJQVlA4IL4WAAAwUACdASrNAJkAPlEkjkSjoiGU62W8OAUEoYnyfnn2nrEONTwTXIfkvdGecz/M+pX9GewN/b/K7/bv3S/2H/k+or+b/339ufdo/zP7T+5/9l/YA/nH9m9bH1Lf69/wvYM/j3+W/9/rsfuh8K39v/7XptYJ/wi+/eCvjN93ft37l8g3pzzN+vP7z1x/y//M8Nfg//b/3L2CPXX+a3yHZP9n6Avsl9I/4H3G/Cl9J/3fQ/68/8b3Av1V/5frB/wvEs+w/7r2A/5d/cv+3/ifyk+VH/t+7v3Z/Wf/q9w/9fP+92F/RZ/ao+PDX4ul43hr8XS8bw1+LnZm7DUdg2LgHTbF7VJaqYg6HGWGqJvMy57KDg4yyqJ2fYhOD7u5inB4gwm1vuQ8BYqVVz7IOkdhBIBk8Uk1wgsKXtXKf+kH4kE/zcFIhS4c75ibAVTL7hpS7/GqAlHXyThnuFiaxnlFJC5Gp8EnZL+vZO23dZiWU9A1690j/e4s80s/FVC0PX6pH18eKT10GWk4M7TjkeoaecIEk3YFn2acdcuiXDayrLyD4Thtmrfv/Rlt1ZAGb4Z+nhHItnNp6FBXrmu17EcIbOUc9xDD7ifPqsdYcmBLL3qLU5NeyHOU4nYvZTwlU8JyDp/Uj2MlZ8j0gAWNKmoJ0j7PB/9eAG+7/L/n/CNAxqn3ObQEgKeoGkzSgvv0VcoE/et5oLPRSq3PjUx5MjzQZOmSxy5md4kp82Bzi0Tv/IX+SbTUJjhS6BE2SVUcA2qsYELzEitDxBkNn5nzJo4KreaW/brGs7WsMqzJhAOXGtHxW7ghrkq5hh//tvDHDIxBrNEZGINZoi/xNNzDni6XjeGvxdLxvDX4ul40AAD+/YDwAAAAEN/yL/iEnL3x65LNv2LFqXCbij7M91tH6BrFLO6u2QjALoP/k/7LUygAP/Lk35/DX4ABfkPRYDloKinDGIwKLH1Z+DljL8tNMC1fQbifn+GkFicpkTv2GtjW12JTMNddHAh3dD8+queVlC9AbcjRVWMNdA8aDckWmB9LjdOuswo7AlV0/pRqm6+b9U8niudfFwoW/la5aGAYjA7ktwwqJGHYG9bWohn0TzqF4a1P3DpJJQDuxsMPZc7jYuaJkQX9SERtFRjdYi0DUzDuuBrmJsxuffS7up/w5U9j/nSodpMtjSTJSGkW4gxhLQ1w+Ri68CqEU7Yuqv7XJecVR28vH89UvR6jcbPqGOmV4tXI8U0fwMsjiFOt7EWfo5pOdtH5uJmxa/YM1RVoy6JJqNH7acw7fl3wnFzhwumQWtn/gPvSzbDjB/INCVh6sc+1OLeHOV8ZehVBGy44J1s7dMLdu/P4HuaEj92cbBdySy2+RHoS7qS0NWwUEYcp8nK+Y7OgmQ8oaHCGvCp4vRZOMHUSrXBDiqsL20o/q/xyHvpIV8sGxyd83PwU6DlZ41k/8kF5KX5OAEzC9zsuq8+C0S/7EKa2TWbq7JUT/Y8Ptg9j81TuagX/dm+ODVd08uilIhEv2gSmDWJD3jWKmD6j4MBqaQEdtFi8cgMru9PgZWEk7oep9z35V28mqD6bg2TjvvpLtcnTpa3adxLoiqddJEy4NkhTfrNaXqBnMkK8yFW5iyKJbowGaQA/Yi4jrjob2VTDhYAVg41pZDQfN2JIoJ1ju3JXW2blJe5VokBrmU1ObzkeAuzQzITrXo5x+GeO1gz9OyiMgAg016naHVPER5wm2lfWKgyIv/TocvzlKkjWF48pGVTjLznmk/GDEaDNFZ44uN0+rp5B0z0Wd36p/2dwjBrlYDj+j4LYHWl0NTdNu43wcmagM6Qd5LXVULJQC3MfsE7aK3TmvC3ZbtgLGsmopvRZTr7WKCKCJ5vtcso+xBBLyPT5xVK8Rxpcjkc7PORORdZaFO3PpMFWRLzHK/blH9EFbyhph7a31hZUZriNc+hrNWPT+KeSbXnG1sYCE4dRBUj7h06vWQnIe9sHv6W6lrHnkPvMzqXbO17UoDoxfmW1EV0Y6EVAhY3lVYB9s6HEOZCRQPWp2Uy/K9mhZ2NNeEIoflAm80/UXUyGF31acIlxHJs3EnKe/ALygK+d9etpci3Ul4su8yhq1lnANDvOJgAaFCd/AUGZE1yo5zYjZsySNIQck3P/zIzjfa7Ev5RncwDWD7TMKDESKSfMoQc+WVsgzO/GpF66Ub0d0nKMrsa2sGvsopzUtjlwhMPyLkwoFE/A2pSOsbPBryUuK0yDoT0sTUrUATsoi7/4zv9PwUnIMgxE8c1TrKor5KF2f9S/mgqTobItsEYpmwbrXJ3PsHSgX3C0flSoKWJ8uFhppR8DirT9pd96w7l01PUgOoQ5/v4+c8E3ds7WwBaJjOgT/YLUT35TrKXi9atExJqv0oeJxXS/4+eLxg2V67vEduzDkPIvkDFowHCIKPGAS+UEIQ0I7fyvWGzH4gImFxZcUFfZDV6KIRgnUO9mTjwb0es0ERLZnD0hXIFwnsoNO3Yyu3YKcYHyHl1puB9aTC1Bk4fSxfjIpL9MLb4z/WmOWJ2IDS9y98JGHzMun4SwVfxBU6WwW5bq1DfXqW23iB53/Vf6HHzS99Cv68haMGgNmYeuhygMuivnZdmE3l81ZcFquaf/80gVh7+83Nl+nX2nFqNxN9USin+MY3w9ahr+Z/U9TLoQH7ZfbbpcrvKkJ055Bg9G5n8/Zr2upYtEpsnvYLWrm4nSqnh8aFjRfitl4Afk6hEAJlmsVYru0hbIm04smCx6n7PyF4G1QP+yi2z/R+EHa+Pu2LhARTKpkV0kDPJAzG6hxt5NLwj4nCyi3AzdUAIjPT3Ul7fjmSyY1AMAJonXcSMpEofivhdrd0OQ5kmBEGQ5GgqzEenH61pGhl2BBLVSUJransMyNaOQXXsv64DB4Q3apaK1uP6UCWuDgsLgl6lsyKexWFdK9O4kQFUgWESAvjiHrnXwSxHdonOOYVYfwssF56pQE5cHQeOHC4vFkpFE9IKz8C1lQOclGE5h8Y5yXv66/kIOSUL6K7uB8SFY+KIr0BGuM50JPQSO38tRDGLSLE1X9MW26sT3+BKKAfzUf+3BhgURzoKZyHZEMi7A+FcErRnfLFrkc8a4LrPxd+JrjezC3kRjMa4CFB2cL8x1qQ0LBqE/5tEdebufjtWa3VksEfYRiWnxuLPmqqiTVJfjU0lszqKjgoEQ3+6Vx+ISq/ykIw5zFLNNnhz+M8eszrxIaqnym08twA3tm/aa0ZOWddkqbgHaoHlY0HWHvgLvaT8JCgzDKBdVXAARfyQ4n4UnO5g+vPYgofpqoDS+2xp8ytwQDLKkyIJKXwb6Vmxy/aeUB5PdeDwHUmytxcJ1o6sTX7/DEVPqCcEHn9hjkxJwfBG5BZSj3X7JYWguVT46qjAhfIlQRrCx8quDxox/1Uj/IXrwbQbxAOwsX6DXw37fXxbqQil2gZ5hFAIy8b/bjLxVmFlSym9BTF0QpdQjVe4NYGpKsuHJLqSDl6fNEs62kZk1JfO0jipXlJXFbTYvwHP0dnXwXZNUTimJkgxponX0G/HGrxvqc7XwXp0uSBOXl/udoOG/dS8cYDBMK+0QjOu9ZC6GQxi6ehtIZkPlfIu5qR1DMiFDwyzrlaqXjWt0IPXAr6D6x29QmTBGnC1XoSaTwUqVhAQmn3zw8SAeAvwFb5Xn4179ltrJfnXu9PTlQa/NUuf763mneQJ6fBbbFbxoa9f/dtAdnPzRYXZB/8bfBVBI1T7HGgPM9ku7sooOdtqQLZKIbhftbNKcawQo5Yiwpkc2/d1tfY3ntIgLVne8GNdy0tlx8M1Ge9bXuLGYuXUXdS6qHJ3FE39J36r9QSTJEykVmmaiB1izIzre5veJstgE64tHpH6pmZW0/WtDWx1781kJmCEQ1Nfnvr4C6PQLbNRq5gFvsKTYogY5gTodR4m+eXFORHkm6a02zqJ2fj3JQwhjOi6Ajm41uxKMVKkar3CzNNv17s6zwJrkB4o05bsuf514+QmimnKrgUyxyRP/8bKd2zup0ihMoxnmsPQ0LiD+Lu83ghIrpaNaWg44zkfGXxGU6VpKQsXpeJ3DL+YVg1ZBJgBry/DfndIzLFxFe74murRhzgwrojIkLF75EO5GxWjKIe/ZIBgcbHNiGsBI4OD9rID4oSN8RzdagRsWeJq0ZDelWuVA/0VL7YqcGF2JIDtk83E1LyyvJJGAczM5OqO7vaWqJJJorwykM4DY0vpG+bqD/bjbH0MLdTykcQ6mdOlRYUXLAZ1tGC4tw/8fDBP2eCGzYVZcEnapmRWXtPiwjA7+mpXoFnf+VfTp+8z8CVwyWxYBVrJR6LSHQGYiKQPjIYOr5ENmFbhWZkeytsakXd7TLw85pNbIyD89+yLfI+xXrw16CQb7zCjujBEkRySW8KOdYlvymdxgAreUs3l8lQFwwR4SKNleGYcvixGQ29EZXIpL/RfuGsx5lOLD6d0uDuR4QuQJAvGga+sxm73I2XeBvfi9FLV9uMuS2LCDd5hWdz/9vNM7e6KyfvoOLk9IHrfrRLA2KPWgzXN68mlm1bCANb/5/gAecyGM8aMrznuMthkRxHQTwJpGAeUYpDW+TAALBTi0vhiUnD1rIOXAhKqiT9xvnyadA/6rsU3Sdwa00/udqiCxnWsU8ycgnro8B8F+i6XmX2EnHJPEKQmduN1nzdK/sM+k3YTUp9M6wUe0KdS//2b7AOCU4NhHvkLEVR3A7Otk6L1/T8FG5vUKlJw4CtzrnrqygMBCtSbz9bdv7IT5PDYNJh5584s5eYZB0EQItPvoyP4/wZb7M8R+3tRmxKt3TKxzt6jBAhSeXAPw2P/8gRr+2bKxgBBUqqmUG3CsA0JE4wI2oOOG/b9LPEk3u2C3AVeixU0w7s7rX3fWI2x6twu4mQoO3yqRhNWH6p2VDq/YJL6f0jr3BahrnsYaGaEGq18PF6Z9relX9Dzft2+oXL1W4Fu57Eag4BQulk+Hji3mG2tnnfnQHCmJi+T4u/Se2r95mAnzVuygKGZFzfTVcA3gnfAa8xB6TwR982uyo7lMsVz0kHIn8/V0uNfqHJ6e8MqFOY4rGGaaAU2ScKOgDQFwqREy5o9f5d/v459oyUTkCvfkYoKBGDkt2DffMqOf1YSXgF1JgerrH0NIuBstjQNDxnE84wbWoKnkVyqVBIngk6M8O8RKqrUvXJZZt4NitKmB/aY5Nvmb2jfnIZw0CI1d+GAM66lVSlvaEqWg2IINkM76u1xJxnIZPljx57f+DAn2zaCiWh9yQ1CgGhHQ/y0Fx2mIkbeQtUkgQhOcyGffDvHW4eTbx1aqkZE+1Lmj0+w2J6rCWcauwnemC+ExhZZCv5RFaMqld2mtbgBMT7VkPetS9HoavJTwmvEyyYrdXf0yK/Za4Ymz/Ee2oaRGBVZeQyTSUeebmHa8ZRvPBwjhUXlY5HlfxCo85TSy7x4rWCjMWA5EqvkKr0i/OK84zAYNL1QsSw/aUx02eG6x/o6KnpM24QyJHdcQjp1KWebCt+kpvAYE3xqZl2Ck3u8JsIm+SN8SorSv2vNS6KFz1hZb3soRFERx9+fUirprynZq/WywjF8Woo03FTnfwSAsR2xBseQb89u7r0+mQTJnzyu18IemXJSDetMpAil1r6rcXSwPgCrMt/2m+z9BBe66jd7JZ4MGaMMfgVlIHHI6zTH+Lt/hh7GLvT9j/CkqVYTUHjY7WTVjTbil0Wa1bwgcTGP7dSEc017a9qqkeOVQwj4ufFpqI9RQaOiX40pArAUMQeER1MdzEdnGqzKItzzQ4DHT44ICEupZAIsHyBQOkv6EOLKgGbxn4SSxVhUFOpreDSsxum4hTCnop9T0E8BSATFtafqQKYiaC+S4n/Yh9hyMZxY3F/gWj+HE/8NX/4r9sr7EBf5CsAQcVW7D3QRwox8b2Ys0nay+qhRR78Qrk1PKJdr+3LzdyuLcDrUNHSCQjOW9U04WBCNTA8rMD/8iLGwvFGfi8YMMEpeZTH3/zqXWhUTXXEKPCvFF0L71Of4irv/d99fAAKZnXfRSk5bgmObn+jrHf7NlOPHfFxpLoWcUXWHJOEfWSCy+ezmOt6VpMuTO/4AB2aBwThSt+PJhIaIeCeDKeoUWz4lYBHO4sLfiiWylqxmP0EMBzTe0xtF+ED9whWbd5uBpdHMglZHxi0nO3bBGwntwC2n8v7UAbDLVoYMEo9G5Z8unP16c2X2sQLzbiw1wiD3NaP24bSGHvFEtrFydl7relEnRlaJAaOv5JRM/l9m7u2kifV1zNLHqXLKqFKVUy5aD2TvCh3SLzITlFpQt6Gvo+Npo5dkpUHAsVfc57RRLA9Re+ae309bQfEaZzoRXz7vauMPK1YXNm1zw3Ua9S0vHH7pXoRLOIuOTd4FhJ9DaJZZizo/af9PaUs3mrGpEI4n58lU8O9XY3oZWrCC5snVIpfsPaCAPO+psxGMpFdmIF77s4pYb/+prAECS5O7RQjzKKTAbwJew4EMFlLXf0th123hN6M61m6AKK4SzbpyFL1p2VGdU95Rq0EqKDGuy6w9OQJ2tjZJP/a83X2vIgt9+90yXe5Gso4Hgw5AtxY9C3TlrLzcYcpvEVBVbnCztRmoCBGW1l3hGwNn0PaE4KDOmYpuZFfdRst3gx1c+d56jMRLZ4NRcp0WozVjIJKbc91/Z2oj7OYOdLIp2aG10KE6crVprPcXTt1IHAdw7JaNTKdSdsKyn6yJ0WzTh2fknFEnp2MgBkN15jotMHT3YUTkFp8w6RhXOM52x2H2XOm75cG2ucG+PkPBv3crGfpjq+oDht/iT7K3AA7mUG2KxZEN4BpytQO/3b690rwyS9KBk8LtdTL46LVA8af+qAuucTFTJT0WfpX8VMe12Wnj4f0cTz0LdFHadVygDLxF10BB6nBD97/DNwgWr4xzGtAQxVA41bPSUAHwMVMFYzyQxH6yYn40PR1ZgD9eW+zuS8J+2O/WVUl6CTuaCFJuTP6sHq0J2ND/PBB/KGHrOolNk25GBOWkSQ78Snk47Ag/vKnD84/1RW6SHje/jINdvINwtQbgKTIMvkwWq0cxhje28gz0YYkpRE9SPhXDQ9J9qTxBj9q7i/k6/Pnt7ldipxNlKBoOcvgxBSpbl/SCWpwiirdSwf+VdaaNoieJ1FLyOT3CwR/FTNKPONQpA6xvLsOONQkb3f4bt41e4ftryesAUpX3zsxmv6rvNj0Ou5kNGNpr+PaN0hEK6pObQ4h6SjEaHcurY+oo9B0YeNCwAk6E2BOcdxxLN3cCTvMN88wTIHjI9cOEtvM1Y6slzm5kF5p8am1mIPYUgDVClcsc9PTaukoYj1Vcg+QzQC8Kn5BZutKzLgLUrdAKsJDhb32/5/HxP7uGlPcZ+iSOv2d2BzWPZPYzSXO4SeXTCtZ1yz29ssTTICkWBaXtoYf280oNGWGV3Dc2sjQWMN2BRHnKlYkSkxx668jYH0TWPdS/EoD2v9ADxpQcN12EbYsFsXinv8aH7PyAxffDgIzmccCtmrNT/8aHFVuza9lL+AdihgMAwE8zwl+woBW1d+hhLyYgzYCbKAUXpTf3HngraXH38xciMhUVW/QXc+CVB1Oei6n4wArqkO5zsa2hPtXb74EpBsKnRNGI00n60qhWDov4N6mOPZrPoEot5FHC/Vu4Wcw1800z5m/IgwGy8aG7J9uy7XktNLAXO7AFKihQOs+YBboCbx04C4XmKsM9tpaYCBRNOgAAAAAAAAAAAAA==">
+          </div>
+
+          <div class="animate__animated animate__fadeInRight">
+            <div class="product-category">Клавіатури</div>
+            <div class="product-name">Ігрова клавіатура</div>
+            <div class="product-price">150$</div>
+            <div class="product-desc">
+            <p>Підключення type-c</p>
+            <p>Switches HATOR Aurum Linear Orange</p>
+            <p>87 клавіш</p>
+            </div>
+            <div class="product-tags">
+            <span class="tag">Підсвітка RGB.</span>
+            <span class="tag">80%</span>
+            </div>
+            <a href="contact.html" class="buy-btn">Замовити🛒</a>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="index.html" class="footer-logo">PC shop</a>
+      <p>2026 усі права захищені</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
